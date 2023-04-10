@@ -1,0 +1,55 @@
+/* ------------------------- Parallax -------------------------  */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: black;
+  }
+
+  .parallax1 {
+    background-image: url('imagens/Castro-de-Aire.jpg');
+    
+    height: 101%;
+    /* efeitos scrolling */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  body {
+    font-family: Arial;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .container {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    top: 98%;
+    margin-left: 50px;
+    text-align: justify;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.648); 
+    color:white;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  @media only screen and (max-device-width: 3000px) {
+    .parallax1{
+      background-attachment: scroll;
+    }
+  }
+  
+  
+      /* Fim Parallax */
+      

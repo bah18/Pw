@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_principal.css">
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="icon" href="imagens/logo1.jpeg">
+    <title> Castro Daire </title>
+</head>
+<body>     
+<!----------------------------------- Navbar ----------------------------------->
+
+<div class="header">
+
+    <div class="logo">
+      <a href="Index.html"><img id="logo" src="imagens/logo.jpeg" alt="Image size" title="Image size" /></a>
+    </div>
+    <div class="rr">
+      <img src="imagens/RR.png" alt="Image size" title="Image size" />
+    </div>
+
+</div>
+
+
+<div id="navbar">
+  <a class="activer" href="Index.html">Home</a>
+  <a href="index.html">XXXX</a>
+  <div class="logout">
+    <a href=""><img src="imagens/login.png"/></a>
+  </div>
+</div> 
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
+    <!-- Fim Navbar -->
+
+     <!----------------------------------- Parallax ----------------------------------->
+  
+
+     <div class="parallax1">
+      <div class="container">
+        <div class="content">
+          <b>
+            Um Municipio que vive a natureza.
+          </b>
+          <p><b>
+             Venha nos visitar para ficar a saber mais sobre esta bela cidade.
+          </b></p>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <!----------------------------------- rodape ----------------------------------->
+
+  <footer>
+    <a class="abc" href="https://twitter.com/ad_castrodaire" target="_blank"><img src="./imagens/twitter.png"></a>
+    <a class="abc" href="https://www.facebook.com/MunicipioCDR/?locale=pt_PT" target="_blank"><img src="./imagens/facebook.png"></a>
+    <a class="abc" href="https://www.instagram.com/visitcastrodaire/" target="_blank"><img src="./imagens/instagram.png">
+    </a>
+  </footer>
+  
+        <!-- Fim rodape -->
+    
+</body>
+</html>
+
+
+
+
+<body>
+
+<h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+</body>

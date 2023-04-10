@@ -1,0 +1,111 @@
+
+/* ------------------------- Navbar -------------------------  */
+
+body {
+    margin: 0;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    background-color: white;
+    padding: 20px;
+  }
+  /* efeito do logotipo */
+      #logo {
+        text-align: left;
+        margin-left: 1%;
+        width: 6%;
+        height: 6%;
+      }
+      .logo img{
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+      }
+      .logo img:hover {
+        -webkit-transform:scale(1.4);
+        transform:scale(1.4);
+      }
+  /* fim do efeito do logotipo */
+  
+  .rr{
+    position:absolute;
+    width: 2%;
+    height: 2%;
+    top:10px;
+    margin-left: 88%;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .logout{
+    float: right;
+    width: 7%;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 30px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  #navbar a:hover {
+    /* background-color: #ddd; */
+    border-bottom: 4px solid rgb(21, 255, 0);
+    color: white;
+  }
+  
+  #navbar a.activer {
+    border-bottom: 5px solid rgb(255, 0, 0);
+    color: white;
+    /* background-color: rgb(223, 43, 43); */
+  } 
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+      /* fim_Navbar */
+      
+  
+  /* ------------------------- rodape -------------------------  */
+  
+  footer>a>img {
+    width: 25px;
+    height: 25px;
+    padding-right: 30px;
+  }
+  
+  footer {
+    border-top: 0px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  img {
+    align-self: center
+  }
+  
+  .abc {
+    font-size: 20px;
+    color:white;
+    text-decoration: none !important;
+    margin: 30px;
+  }
+  
+      /* fim_rodape */
+  
